@@ -2,6 +2,7 @@ import java.util.*;
 import java.io.*;
 public class PoinInACircle{
    public static double randNumber(double r){
+      double z=((int) r)+1;
       double rand=(Math.random()*2*r)-r;//creates a double from -r(inclusive) to r(exclusive)
       return(rand);
    }
@@ -20,7 +21,7 @@ public class PoinInACircle{
       for(int i=0;i<repeat;i++){
          x=randNumber(radius);
          y=randNumber(radius);
-         //System.out.println("The point in consideration is ("+x+", "+y+")");
+         System.out.println("The point in consideration is ("+x+", "+y+")");
          if(Math.pow(x,2)+Math.pow(y,2)<=Math.pow(radius,2)){
             count++;
          }
