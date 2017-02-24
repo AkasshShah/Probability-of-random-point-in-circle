@@ -13,8 +13,10 @@ public class PoinInACircle{
       System.out.println("There is a circle with the equation x^2+y^2="+Math.pow(radius,2)+". This program will generate a random point that lies in a square that has a length of "+(2*radius)+" and see if it is within this circle.");
       System.out.println("The probability that the point is withing the circle is(in percent) "+(100*((Math.pow(radius,2)*Math.PI)/(4*Math.pow(radius,2)))));
       int count=0;
+      System.out.println("How many times do you want to repeat finding points in circle?");
       double x,y;
-      int repeat=100;
+      Scanner scan1=new Scanner(System.in);
+      int repeat=scan1.nextInt();
       for(int i=0;i<repeat;i++){
          x=randNumber(radius);
          y=randNumber(radius);
