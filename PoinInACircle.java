@@ -3,7 +3,7 @@ import java.io.*;
 public class PoinInACircle{
    public static double randNumber(double r){
       double z=((int) r)+1;
-      double rand=(Math.random()*2*r)-r;//creates a double from -r(inclusive) to r(exclusive)
+      double rand=(Math.random()*2*r)-r;//creates a double from -r(inclusive) to r(exclusive). need to make upper bound inclusive
       return(rand);
    }
    public static void main(String[] args){
